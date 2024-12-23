@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DATA ASSIGNMENT 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="bigbox"> <!-- My entire text will sit inside a large page-size div so that I can have more control over the flex boxes inside to make everything clearer. -->
+	<div class="container"> <!-- A separate flexible div box is used for each block of text. -->
+<h1>Winter Is Coming – and Some Neighborhoods are Better Prepared Than Others</h1>
+	</div>
+<div class="container">
+<h5>Data shows impoverished, minority neighborhoods most likely to face issues with heating during the colder months.</h5>
+</div>
+	<p><div class="image">
+		<figure>
+			<img src="images/cold.jpg" id="cold" alt="An iamge of a snowy New York City street"></p>
+		<p><figcaption>
+			As temperatures drop outside, residents of some neighborhoods struggle to stay warm inside. (Image: Creative Commons)
+			</figcaption></p>
+		</figure>
+	</div>
+<!-- I put this into a separate fig box because I wanted it to be separated and centered on the page while I wanted the rest of the text to be set left. I actually wanted the caption to be left aligned with the figure, but I couldn't figre out how to do it without screwing up the formatting, so I left it centered beneath the image -->
+
+<!-- I swear I did not copy this from anyone! I looked it up Stack Overflow (https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside). It took me like 2 hours to figure out how to make the caption align the figure plz don't take points off or think I cheated! -->
+
+
+<h6>By: Jarrod Barry</h6>
+<h6>Dec. 23</h6>
+
+<div class="container">
+<div class="text"> <!-- I've put each paragraph into it's own div boxes. I created flex boxes so that they can move a bit more freely when switching between desktop and mobile set-ups. -->
+<p>As New York City braces for the throes of winter, data compiled from the city’s Department of Housing Preservation and Development (HPD) shows that heat and hot water complaints are concentrated mostly in poorer neighborhoods.</p>
+	</div>
+</div>
+
+<div class="container">
+<div class="text"> <!-- To be honest, I'm not completely sure if I need to put each paragraph in its own separate div box. However, I was worried that not doing so might screw up the formating, especially when I switch to the slightly different div box used for the charts. To be safe, I just did this, though maybe it was too much extra work? -->
+<p>311 records from January 1 to Dec. 1 this year show that neighborhoods in upper Manhattan and southwestern Bronx registered the most complaints regarding a lack of heat or hot water. These included Manhattan Community District 12, comprised of the Inwood and Washington Heights neighborhoods, and Bronx Community Districts 4, 5, and 7, which includes the neighborhoods of Highbridge, Fordham, and Morris Heights. </p>
+	</div>
+</div>
+
+<div class="chart">
+<iframe title="Baby it's cold outside... But is it warm inside?" aria-label="Map" id="datawrapper-chart-2aDoh" src="https://datawrapper.dwcdn.net/2aDoh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="831" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</div><!-- I set the chart inside a separate div box so that I could add some padding around it for the mobile version. Without it, the chart would push up against the edge of the screen in the mobile version and would be very difficult to read. -->
+
+<div class="container">
+<div class="text">
+<p>It’s unclear what accounts for the discrepancy between neighborhoods. Many of the neighborhoods with the most complaints are among the poorest in the city. For instance, the Bronx’s 5th and 4th CD’s have two of the highest rates of poverty in the city, according to the <a href="https://communityprofiles.planning.nyc.gov/">Department of Planning</a>. Many of these districts also have large Black and Hispanic populations.</p>
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>In January 2023, City Comptroller Brad Lander put out <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/Turn-Up-the-Heat.pdf">a report titled “Turn Up the Heat”</a> examining heat and hot water complaints across the city. The report found many neighborhoods with heating violations “were subject to redlining in the late 1930s, which limited the ability for homeowners and landlords to receive low-cost, low-risk mortgages”. The report found that this lack of funding led to poor building maintenance and “problems of chronic disrepair”.</p>
+</div>
+</div>
+
+
+<div class="container">
+<div class="text">
+<p>Caleb Smith is the resiliency coordinator at WE ACT, a community activist group that supports low-income tenants. While they couldn’t explain the heat complaints specifically, they said that these data are in line with other research on housing quality across the city. They added that the structural problems with buildings in these neighborhoods “have a strong correlation with systemic practices of disinvestment in communities of color, such as redlining.”</p>
+</div>
+</div>
+
+
+<div class="container">
+<div class="text">
+<p>Smith pointed to a <a href="https://climate.cityofnewyork.us/wp-content/uploads/2024/04/EJNYC_Report_FIN_20240424.pdf">2024 report</a> put out by the Mayor’s Office of Climate & Environmental Justice that examined, among other things, housing maintenance issues. It found a similar racial component with poor housing conditions, including poor heating, noting that they “are more likely to occur in high poverty neighborhoods, and disproportionately impact Black and Hispanic or Latino families that rent their homes”.</p>
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>These complaints come in the context of a slight increase in heat-related complaints this year. According to HPD, year-to-date heat complaints are <a href="https://www.nyc.gov/site/hpd/services-and-information/heat-and-hot-water-information.page">up about 5% compared to last year’s heat season</a> (a period from Oct 1 to March 31 when landlords are required to turn the heat on). So far this season, HPD has registered more than 4,000 additional complaints to 311.</p>
+</div>
+</div>
+
+<p><div class="image">
+			<figure>
+				<img src="images/graphic.jpg" id="thermometer" alt="A graphic showing when landlords must turn on the heat"></p>
+			<p><figcaption>
+				The Department of Housing Preservation and Development requires landlords to maintain heat in buildings when outside temperatures drop below certain levels. (Image: <a href="https://www.nyc.gov/site/hpd/services-and-information/heat-and-hot-water-information.page">HPD website</a>)
+			</figcaption></p>
+			</figure>
+	</div> <!-- Here is another image to break up the text. I've put it inside a div box and included a figcaption. I also included a link to the HPD website that I got it from. -->
+
+<div class="container">
+<div class="text">
+<p>Tenants who have no heat in their apartment have a number of steps they can take. In a <a href="https://www.thecity.nyc/2023/01/06/no-heat-in-your-nyc-apartment-what-to-do-next/">2023 article from The City</a>, Andrea Shapiro, director of programs at the tenant advocacy group Met Council on Housing, recommends recording the temperature in the apartment using a thermometer. Residents should then report the problem to the landlord right away.</p> <!-- I linked to the original website that I found the quote from so that it could get credit and traffic. -->
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>“The first day you don’t have heat, or the first time you notice there’s a problem with the heating system, tell someone — even if you know they’re not going to do anything,” she was quoted as saying in the article.</p>
+</div>
+</div>
+
+
+<div class="container">
+<div class="text">
+<p>Caleb Smith was quick to note that access to heating is a right, not a privilege, and tenants should take action if it isn’t corrected quickly.</p>
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>“All tenants in New York State are legally entitled to heat and hot water,” they said. If the problem isn’t fixed or happens persistently, tenants can “report the loss of heat and hot water to 311 to get a HPD inspector to come confirm the complaints and notify the landlord they will be fined if they don't remedy the issue.”</p>
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<p>Tenants who want to file a complaint about lack of heat or hot water can call 311 or go <a href="https://portal.311.nyc.gov/article/?kanumber=KA-01036">here</a> for an online form.</p>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
